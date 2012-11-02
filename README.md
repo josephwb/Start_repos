@@ -130,6 +130,8 @@ and pull that most recent copy onto your other machine:
 
 	git pull origin master
 
+Otherwise, putting your code in a DropBox folder or equivalent works without push/pulling.
+
 ### Issues
 Sometimes when cloning a repository, git is configured to use https rather than ssh URLs. This means that it will not use your public ssh key, and so you will need to type in your password every time you push. To remedy this, go to the .git directory in your code folder "foo":
 
