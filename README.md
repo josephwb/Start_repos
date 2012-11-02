@@ -71,7 +71,7 @@ Go to:
 
 bitbucket.org
 
-Sign up if need be. +Make sure to use an academic email address, as this entails free unlimited space.+
+Sign up if need be. *Make sure to use an academic email address, as this entails free unlimited space.*
 
 Select "Manage Account" from your user menu. Then, select "SSH keys", and click on "Add key". It is important that the key is formatted exactly (e.g. does not contain spaces), so we need a dependable way to copy/paste. We'll use the clipboard.
 
