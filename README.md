@@ -119,6 +119,17 @@ Push already:
 
 There are, of course, a lot of other commands, but these are the ones you will use often. There are tons of git cheatsheets online.
 
+### Multiple Computers
+You might want to use multiple computers for code development (say, work and home). You will therefore want to make sure code is synced across your machines. The simplest way to do this is to commit all changes when leaving one machine:
+
+	git add .
+	git commit -m "latest version"
+	git push origin master
+
+and pull that most recent copy onto your other machine:
+
+	git pull origin master
+
 ### Issues
 Sometimes when cloning a repository, git is configured to use https rather than ssh URLs. This means that it will not use your public ssh key, and so you will need to type in your password every time you push. To remedy this, go to the .git directory in your code folder "foo":
 
