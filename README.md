@@ -1,4 +1,4 @@
-Some Tips Ease Setting Up Version Control
+Some To Tips Ease Setting Up Version Control
 --------------
 ### Get Git And Configure (Do Once)
 If you do not have git (needed for both BitBucket and GutHub) installed, go here:
