@@ -65,7 +65,7 @@ Use the email associated with your Bitbucket/Github account. It will ask you for
 ### Set Up BitBucket Account (Do Once)
 Go to:
 
-bitbucket.org
+http://bitbucket.org
 
 Sign up if need be. *Make sure to use an academic email address, as this entails free unlimited space.*
 
