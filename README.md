@@ -110,7 +110,7 @@ You will see the hidden directory .git. Wee!
 
 Pushing Code
 --------------
-1. Add files to be pushed:
+Add files to be pushed:
 
 	git add .
 
@@ -118,11 +118,11 @@ Pushing Code
 
 	git add foo.txt
 
-2. Commit files:
+Commit files:
 
 	git commit -m "some message about the commit"
 
-3. Push already:
+Push already:
 
 	git push origin master
 
@@ -143,7 +143,7 @@ You will see something like:
 Edit this to:
 
 	[remote "origin"]
-		\#	url = https://YOUR_USER_NAME@bitbucket.org/YOUR_USER_NAME/YOUR_REPO_NAME.git
+		#	url = https://YOUR_USER_NAME@bitbucket.org/YOUR_USER_NAME/YOUR_REPO_NAME.git
 		url = git@bitbucket.org:YOUR_USER_NAME/YOUR_REPO_NAME.git
 
 Pushing will now not require a password.
