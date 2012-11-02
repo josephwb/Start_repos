@@ -1,8 +1,6 @@
 Tips On Setting Up Version Control
-==============
-
-Get Git And Configure (Do Once)
 --------------
+### Get Git And Configure (Do Once)
 If you do not have git (needed for both BitBucket and GutHub) installed, go here:
 
 http://git-scm.com/downloads
@@ -55,8 +53,7 @@ Now, inform git about these preferences. Type:
 
 	git config --global core.excludesfile ~/.gitignore_global
 
-Set Up A Public SSH Key (Do Once Per Computer)
---------------
+### Set Up A Public SSH Key (Do Once Per Computer)
 Pushing code is to Bitbucket/GitHub is crazily simple. However, before doing that, we will set things up so you will not have to enter your password every time you want do something. To do this, we will create and upload a public ssh key.
 
 Do NOT do this step if you already have set up ssh-keys, e.g. if you did this previously for GitHub (an ssh key can be reused, and this will overwrite any existing keys). In Terminal:
@@ -65,8 +62,7 @@ Do NOT do this step if you already have set up ssh-keys, e.g. if you did this pr
 
 Use the email associated with your Bitbucket/Github account. It will ask you for a passphrase. Just hit Enter (for empty passphrase). Your public key will be saved in ~/.ssh/id_rsa.pub. 
 
-Set Up BitBucket Account (Do Once)
---------------
+### Set Up BitBucket Account (Do Once)
 Go to:
 
 bitbucket.org
@@ -90,8 +86,7 @@ In the Key window, paste in the key and click "Add key". Test this in Terminal:
 
 You only need to do the steps above once. Any new repositories will use this key. Setting up a GitHub account is similar.
 
-Create BitBucket Repository
---------------
+### Create BitBucket Repository
 Now, to set up the repository. Click on "Repositories" at the top, and select "Create repository". Configure name, description, private/public, language, etc. Use Git as Repository type.
 
 Done on the web. Switch over to a Terminal. cd into the folder containing your code. Type:
@@ -105,8 +100,7 @@ If you type:
 
 You will see the hidden directory .git. Wee!
 
-Pushing Code
---------------
+### Pushing Code
 Add files to be pushed:
 
 	git add .
@@ -125,8 +119,7 @@ Push already:
 
 There are, of course, a lot of other commands, but these are the ones you will use often. There are tons of git cheatsheets online.
 
-Issues
---------------
+### Issues
 Sometimes when cloning a repository, git is configured to use https rather than ssh URLs. This means that it will not use your public ssh key, and so you will need to type in your password every time you push. To remedy this, go to the .git directory in your code folder "foo":
 
 	cd foo/.git
