@@ -58,7 +58,7 @@ Now, inform git about these preferences. Type:
 
 	git config --global core.excludesfile ~/.gitignore_global
 
-Set Up A Public SSH Key (Do Once)
+Set Up A Public SSH Key (Do Once Per Computer)
 --------------
 Pushing code is to Bitbucket/GitHub is crazily simple. However, before doing that, we will set things up so you will not have to enter your password every time you want do something. To do this, we will create and upload a public ssh key.
 
