@@ -1,3 +1,6 @@
+Instructions On Setting Up Version Control
+==============
+
 Get Git (Do Once)
 --------------
 If you do not have git (needed for both BitBucket and GutHub) installed, go here:
@@ -17,39 +20,39 @@ Set up git to ignore files that you do not care about. Type:
 
 and paste in the following (you may want to add in your own):
 
-# Compiled source
-*.com
-*.class
-*.dll
-*.exe
-*.o
-*.so
-
-# Packages/compressed files. This can take up a lot of space.
-*.7z
-*.dmg
-*.gz
-*.iso
-*.jar
-*.rar
-*.tar
-*.zip
-
-# Logs and databases
-*.log
-*.sql
-*.sqlite
-
-# OS-generated files
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-Icon?
-ehthumbs.db
-Thumbs.db
-*~
+	# Compiled source
+	*.com
+	*.class
+	*.dll
+	*.exe
+	*.o
+	*.so
+	
+	# Packages/compressed files. This can take up a lot of space.
+	*.7z
+	*.dmg
+	*.gz
+	*.iso
+	*.jar
+	*.rar
+	*.tar
+	*.zip
+	
+	# Logs and databases
+	*.log
+	*.sql
+	*.sqlite
+	
+	# OS-generated files
+	.DS_Store
+	.DS_Store?
+	._*
+	.Spotlight-V100
+	.Trashes
+	Icon?
+	ehthumbs.db
+	Thumbs.db
+	*~
 
 Now, inform git about these preferences. Type:
 
@@ -134,13 +137,13 @@ Sometimes when cloning a repository, git is configured to use https rather than 
 
 You will see something like:
 
-[remote "origin"]
-	url = https://YOUR_USER_NAME@bitbucket.org/YOUR_USER_NAME/YOUR_REPO_NAME.git
+	[remote "origin"]
+		url = https://YOUR_USER_NAME@bitbucket.org/YOUR_USER_NAME/YOUR_REPO_NAME.git
 
 Edit this to:
 
-[remote "origin"]
-#	url = https://YOUR_USER_NAME@bitbucket.org/YOUR_USER_NAME/YOUR_REPO_NAME.git
-	url = git@bitbucket.org:YOUR_USER_NAME/YOUR_REPO_NAME.git
+	[remote "origin"]
+		\#	url = https://YOUR_USER_NAME@bitbucket.org/YOUR_USER_NAME/YOUR_REPO_NAME.git
+		url = git@bitbucket.org:YOUR_USER_NAME/YOUR_REPO_NAME.git
 
 Pushing will now not require a password.
