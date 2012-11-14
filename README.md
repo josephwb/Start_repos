@@ -133,7 +133,7 @@ and pull that most recent copy onto your other machine:
 
 Note that this will try to merge any differences between the remote and local copies. To ignore local changes and replace locval code with the remote version, use:
 
-	git rest --hard origin/master
+	git reset --hard origin/master
 
 Otherwise, putting your code in a DropBox folder or equivalent works without push/pulling.
 
