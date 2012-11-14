@@ -1,5 +1,6 @@
 Some Tips To Ease Setting Up Version Control
 --------------
+A Mac-oriented alternative is here: http://rogerdudler.github.com/git-guide/
 ### Get Git And Configure (Do Once)
 If you do not have git (needed for both BitBucket and GutHub) installed, go here:
 
