@@ -39,6 +39,9 @@ and paste in the following (you may want to add in your own):
 	*.log
 	*.sql
 	*.sqlite
+	# Eclipse files - especially important across OSs
+	*.cproject
+	*.project
 	# OS-generated files
 	.DS_Store
 	.DS_Store?
