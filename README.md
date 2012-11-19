@@ -26,7 +26,7 @@ and paste in the following (you may want to add in your own):
 	*.exe
 	*.o
 	*.so
-	# Packages/compressed files. This can take up a lot of space.
+	# Packages/compressed files. Can take up a LOT of space, as every version is retained.
 	*.7z
 	*.dmg
 	*.gz
