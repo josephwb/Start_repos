@@ -13,7 +13,7 @@ If this is your first time using git, you will need to configure it. In a Termin
 	git config --global user.name "first last"
 	git config --global user.email your_email@youremail.com
 
-Set up git to ignore annoying files that you do not care about. Type:
+Set up git to ignore annoying files that you do not care about, or that have different values across OSs. Type:
 
 	vi ~/.gitignore_global
 
