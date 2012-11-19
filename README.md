@@ -39,7 +39,7 @@ and paste in the following (you may want to add in your own):
 	*.log
 	*.sql
 	*.sqlite
-	# Eclipse files - especially important across OSs
+	# IDE-specific files (e.g. Eclipse) - especially important across OSs
 	*.cproject
 	*.project
 	# OS-generated files
@@ -138,7 +138,7 @@ Note that this will try to merge any differences between the remote and local co
 
 	git reset --hard origin/master
 
-Otherwise, putting your code in a DropBox folder or equivalent works without push/pulling.
+Otherwise, putting your code in a DropBox folder or equivalent works without push/pulling. Note, however, that this works best when computers share an OS. Otherwise, IDE-specific files will cause headaches.
 
 ### Issues
 Sometimes when cloning a repository, git is configured to use https rather than ssh URLs. This means that it will not use your public ssh key, and so you will need to type in your password every time you push. To remedy this, go to the .git directory in your code folder "foo":
