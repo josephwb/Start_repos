@@ -39,6 +39,7 @@ and paste in the following (you may want to add in your own):
 	*.log
 	*.sql
 	*.sqlite
+	.Rapp.history
 	# IDE-specific files (e.g. Eclipse) - especially important across OSs
 	*.cproject
 	*.project
