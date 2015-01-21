@@ -26,6 +26,7 @@ and paste in the following (you may want to add in your own):
 	*.exe
 	*.o
 	*.so
+	*.pyc
 	# Packages/compressed files. Can take up a LOT of space, as every version is retained.
 	*.7z
 	*.dmg
