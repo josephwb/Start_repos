@@ -41,6 +41,7 @@ and paste in the following (you may want to add in your own):
 	*.sql
 	*.sqlite
 	.Rapp.history
+	.Rhistory
 	# IDE-specific files (e.g. Eclipse) - especially important across OSs
 	*.cproject
 	*.project
