@@ -2,9 +2,13 @@ Some Tips To Ease Setting Up Version Control
 --------------
 A Mac-oriented alternative is here: http://rogerdudler.github.com/git-guide/
 ### Get Git And Configure (Do Once)
-If you do not have git (needed for both BitBucket and GutHub) installed, go here:
+If you do not have git (needed for both BitBucket and GitHub) installed, go here:
 
 http://git-scm.com/downloads
+
+on \*nix, git can be obtained with:
+
+	sudo apt-get install git
 
 There are GUI clients available, but we're beyond that, right?
 
@@ -105,7 +109,7 @@ If you type:
 
 	ls -la
 
-You will see the hidden directory .git. Wee!
+You will see the hidden directory `.git`. Wee!
 
 ### Pushing Code
 Add files to be pushed:
@@ -115,6 +119,10 @@ Add files to be pushed:
 "." adds everything that differs from the repository. To restrict it to file "foo.txt":
 
 	git add foo.txt
+
+You can also restrict things to only *edited* files: those that are already part of the repository (i.e., were added previously, but have since changed). This will skip any "new" files.
+
+	git add -u
 
 Commit files:
 
