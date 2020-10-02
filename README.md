@@ -145,7 +145,7 @@ and pull that most recent copy onto your other machine:
 
 	git pull origin master
 
-Note that this will try to merge any differences between the remote and local copies. To ignore local changes and replace locval code with the remote version, use:
+Note that this will try to merge any differences between the remote and local copies. To ignore local changes and replace local code with the remote version, use:
 
 	git stash
 
