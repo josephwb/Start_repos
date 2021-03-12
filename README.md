@@ -111,31 +111,35 @@ If you type:
 
 You will see the hidden directory `.git`. Wee!
 
-### Pushing Code
-Add files to be pushed:
+### Pushing Local Code To The Remote Repository
+The first step is to add local files to the staging area: this essentially marks files to be uploaded ('pushed'). Git does neat things like keeping track of file _differences_ rather than entire files, but we do not have to worry about that here.
+
+To add files to be pushed:
 
 	git add .
 
-"." adds everything that differs from the repository. To restrict it to file "foo.txt":
+"." adds _everything_ locally that differs from the remote repository. You probably do not want do this if you have a bunch of temporary files (e.g., test data) in the repository that you do not want to share. You only typically use this if 1) you are starting from scratch and want to push _everything_, or 2) you keep your repo directory immaculately clean.
+
+To restrict it to file "foo.txt":
 
 	git add foo.txt
 
-You can also restrict things to only *edited* files: those that are already part of the repository (i.e., were added previously, but have since changed). This will skip any "new" files.
+You can also restrict things to only *edited* files: those that are already part of the repository (i.e., were added previously, but have since changed). This will skip any "new" files. This is the most common way I work.
 
 	git add -u
 
-Commit files:
+You are now ready to 'commit' the marked files. Each commit requires a brief message describing the edits made. Make this message as descriptive as possible, as this will assit later if one neds to search through past changes.
 
 	git commit -m "some message about the commit"
 
-Push already:
+Finally, we can push to the remote repository:
 
 	git push origin master
 
 There are, of course, a lot of other commands, but these are the ones you will use often. There are tons of git cheatsheets online.
 
 ### Multiple Computers
-You might want to use multiple computers for code development (say, work and home). You will therefore want to make sure code is synced across your machines. The simplest way to do this is to commit all changes when leaving one machine:
+You might want to use multiple computers for code development (say, work and home). You will therefore want to make sure code is synced across your machines. This also applies when collaborating with other people. The simplest way to do this is to commit all changes when leaving one machine:
 
 	git add .
 	git commit -m "latest version"
